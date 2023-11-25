@@ -1,0 +1,58 @@
+//login
+
+POST http://localhost:5500/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "data": {
+        "username": "superadmin",
+        "password": "adminsuper"
+    }
+}
+
+###
+
+//testing middleware
+GET http://localhost:5500/ HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJuZW90ZXJfYW5kcmEiLCJhY2NvdW50R3JvdXAiOiJORU9URVIiLCJpYXQiOjE3MDAzMDc3MzUsImV4cCI6MTcwMDMxMTMzNX0.k2Wyg_QwE5UvJJLMyVxQn5MgZN-MnG0-vnPhnAZ3R9w
+
+{
+    "data": {
+        "username": "neoter_andra",
+        "password": "andraneoter"
+    }
+}
+
+###
+//insertOne
+POST http://localhost:5500/account HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDMxODU0MCwiZXhwIjoxNzAwMzIyMTQwfQ.oVqPJoizxfjgRQQQM6jrOXXFCb7NOH4DyPoFmNiS154
+
+{
+    "data": {
+        "username": "neoter_darisuperadmin",
+        "password": "nurneoter",
+        "groupId": 2
+    }
+}
+
+###
+
+//deleteOne
+DELETE  http://localhost:5500/account/19 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDM1NzU0NiwiZXhwIjoxNzAwMzYxMTQ2fQ.zHEzDEVlfGhtklf8EmoS_ANTb4m7nqnyrJRPOLUD1X0
+
+###
+//updatePassword
+PATCH http://localhost:5500/account HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJuZW90ZXJfYW5kcmEiLCJhY2NvdW50R3JvdXAiOiJORU9URVIiLCJpYXQiOjE3MDAzMTk2ODYsImV4cCI6MTcwMDMyMzI4Nn0.31IgPcIO4IkoqCcDTing3zS1A-Q9X14QYann3I3hmg8
+
+{
+    "data": {
+        "newPassword": "andraneoter"
+    }
+}

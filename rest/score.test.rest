@@ -1,0 +1,12 @@
+
+POST http://localhost:5500/score HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDg3NzU1NywiZXhwIjoxNzAwODgxMTU3fQ.zyBvzAVWIadJbPw9oDT9GXPVobZ6qxIUW8Bcdjkpf-8
+
+{
+    "data": {
+        "eventComponentId": 22,
+        "playerId": 10,
+        "score": "NO"
+    }
+} 

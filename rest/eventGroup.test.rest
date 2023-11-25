@@ -1,0 +1,46 @@
+###
+
+//getMany
+GET http://localhost:5500/eventGroup/all HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDg4NzEyOCwiZXhwIjoxNzAwODkwNzI4fQ.388ccuH0q4hNIyiTRqQiSnGf4ba1se5erbYbtI3JMvM
+
+###
+
+//getOne
+GET http://localhost:5500/eventGroup/2 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDg4NzEyOCwiZXhwIjoxNzAwODkwNzI4fQ.388ccuH0q4hNIyiTRqQiSnGf4ba1se5erbYbtI3JMvM
+
+
+###
+//insertOne
+POST http://localhost:5500/eventGroup HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDg4NzEyOCwiZXhwIjoxNzAwODkwNzI4fQ.388ccuH0q4hNIyiTRqQiSnGf4ba1se5erbYbtI3JMvM
+
+{
+    "data": {
+        "name": "me no mae ni",
+        "description": "blablabla"
+    }
+}
+
+###
+//deleteOne
+DELETE  http://localhost:5500/eventGroup/3 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDM1Nzc4OSwiZXhwIjoxNzAwMzYxMzg5fQ.qsLfeB6j_dtGrZBDQqzk3ohNYGGu-XrOBzFLM00D2w8
+
+###
+//updateOne
+PATCH http://localhost:5500/eventGroup/10 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDM1Nzc4OSwiZXhwIjoxNzAwMzYxMzg5fQ.qsLfeB6j_dtGrZBDQqzk3ohNYGGu-XrOBzFLM00D2w8
+
+{
+    "data": {
+        "name": "updatedEventGroup",
+        "description": "newDescription"
+    }
+}

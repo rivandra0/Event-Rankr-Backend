@@ -1,0 +1,24 @@
+GET http://localhost:5500/player/all/2 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDY1NzQ5NSwiZXhwIjoxNzAwNjYxMDk1fQ.YygjHlAVbfh9aOkZ8BamApaNbNlPL6SD0I7frfgzNeM
+
+
+###
+//insertOne
+POST http://localhost:5500/player HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDY1NzQ5NSwiZXhwIjoxNzAwNjYxMDk1fQ.YygjHlAVbfh9aOkZ8BamApaNbNlPL6SD0I7frfgzNeM
+
+{
+    "data": {
+        "name": "playerA",
+        "eventGroupId": 2
+    }
+}
+
+###
+
+//deleteOne
+DELETE  http://localhost:5500/player/2 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDY1NzQ5NSwiZXhwIjoxNzAwNjYxMDk1fQ.YygjHlAVbfh9aOkZ8BamApaNbNlPL6SD0I7frfgzNeM

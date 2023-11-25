@@ -1,0 +1,38 @@
+//insertOne
+POST http://localhost:5500/eventComponent HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDU2OTMwNiwiZXhwIjoxNzAwNTcyOTA2fQ.AAJSml6SnS4EQ0qegMwZ0xnaqsD9WAMTS4-cty2Wdt0
+
+{
+    "data": {
+        "eventId": 4,
+        "name": "fifthBoolComponent",
+        "type": "select",
+        "rules": ,
+        "componentOrder": 5
+    }
+}
+
+###
+//deleteOne
+DELETE  http://localhost:5500/eventComponent/2 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDU2OTMwNiwiZXhwIjoxNzAwNTcyOTA2fQ.AAJSml6SnS4EQ0qegMwZ0xnaqsD9WAMTS4-cty2Wdt0
+
+
+###
+//updateOne
+
+PATCH http://localhost:5500/event/7 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzdXBlcmFkbWluIiwiYWNjb3VudEdyb3VwIjoiU1VQRVJBRE1JTiIsImlhdCI6MTcwMDM3NTQyNCwiZXhwIjoxNzAwMzc5MDI0fQ.9oOjgvnqoULD6PzbndsXsEy2qY6XzbhZ2XNEYudgrTo
+
+{
+    "data": {
+        "eventGroupId": 2,
+        "name": "updatedFirstAgain",
+        "eventOrder": 8,
+        "isActive": 9,
+        "startDate": "2023-11-12T07:27:48.000Z"
+    }
+}
